@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.cntr{
+    position: relative;
+    width: 450px;
+    height: 300px;
+}
+.cntr .borders span{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.cntr .borders span:nth-child(1){
+    border-left: 2px solid #696cff;
+    border-top: 2px solid #696cff;
+    left: -30px;
+    top: -30px;
+}
+.cntr .borders span:nth-child(2){
+    border-right: 2px solid #696cff;
+    border-top: 2px solid #696cff;
+    right: -30px;
+    top: -30px;
+}
+.cntr .borders span:nth-child(3){
+    border-right: 2px solid #696cff;
+    border-bottom: 2px solid #696cff;
+    right: -30px;
+    bottom: -30px;
+}
+.cntr .borders span:nth-child(4){
+    border-left: 2px solid #696cff;
+    border-bottom: 2px solid #696cff;
+    left: -30px;
+    bottom: -30px;
+}
+.cntr .box{
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    border: 5px solid #444;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cntr .box .pic{
+    position: relative;
+    width: 130px;
+    height: 170px;
+    border: 5px solid #444;
+    top: 40px;
+    left: 30px;
+}
+.cntr .box .pic::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 5px solid #444;
+    border-radius: 50%;
+    top: 30px;
+    left: 25px;
+}
+.cntr .box .pic::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    border: 5px solid #444;
+    bottom: -5px;
+    left: 5px;
+    border-radius: 100px 100px 0 0;
+}
+.cntr .box .content{
+    position: relative;
+    width: 200px;
+    height: 170px;
+    top: 20px;
+    left: 40px;
+}
+.cntr .box .content span{
+    position: absolute;
+    width: 90%;
+    height: 6px;
+    background: #444;
+    border-radius: 50px;
+    top: calc(var(--i) * 22px);
+}
+.cntr .scanner{
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: #696cff;
+    top: 0;
+    animation: anim 4s linear infinite;
+}
+@keyframes anim{
+    0%, 100%{
+        left: 0;
+    }
+    50%{
+        left: 100%;
+    }
+}
+.cntr p{
+    position: absolute;
+    bottom: -40px;
+    color: #696cff;
+    font-size: 17px;
+    left: 45%;
+    animation: anim2 2s linear infinite;
+}
+.cntr p span{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #696cff;
+    border-radius: 50%;
+    left: -30px;
+    top: 0;
+}
+@keyframes anim2{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
