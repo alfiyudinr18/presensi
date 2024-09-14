@@ -2,6 +2,7 @@
 
 @section('content')
 @push('js')
+<<<<<<< HEAD
     <script>
         // $(document).ready(function(){
         //     setInterval(function(){
@@ -21,6 +22,9 @@
             }, 1000);
         });
     </script>
+=======
+    
+>>>>>>> 5d36939497f68732d9a1fcf7bd22c6fba99bce9e
 @endpush
 
 <div class="container-xxl flex-grow-1 container-p-y">
