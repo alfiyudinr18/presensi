@@ -18,20 +18,19 @@ class RfidTagController extends Controller
 
     public function reader()
     {
-        $nama = "";
-        $text_mode = "";
-        $hasil = null;
-
         $data = Rfid_tag::find(1);
         $cek =  Rfid_tag::all()->toArray();
         $mode = Mode::first();
         $mode_absen = $mode->mode;
 
+        $nama = "";
+        $text = "";
+        $hasil = null;
 
         if ($mode_absen == 1) {
-            $text_mode = "Jam Masuk";
+            $text = "Jam Masuk";
         } elseif (2) {
-            $text_mode = "Jam Pulang";
+            $text = "Jam Keluar";
         }
 
         // cek tabel temp rfid
@@ -80,7 +79,7 @@ class RfidTagController extends Controller
         // delete temprfid
         Rfid_tag::truncate();
 
-        return view('front.detail', compact('hasil', 'text_mode', 'nama'));
+        return view('front.detail', compact('hasil', 'text', 'nama'));
     }
     public function rfid($id)
     {

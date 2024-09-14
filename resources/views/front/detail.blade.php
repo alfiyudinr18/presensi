@@ -9,7 +9,7 @@
         </div>
         <div class="pe">
             <div class="sepan"></div>
-            {{$text_mode}}
+            {{$text}}
         </div>
         {{-- <div class="pe">
             
