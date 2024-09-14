@@ -2,13 +2,7 @@
 
 @section('content')
 @push('js')
-    <script>
-        $(document).ready(function(){
-            setInterval(function(){
-                $("#nokartu").load('/nokartu')
-            },1000);
-        });
-    </script>
+    
 @endpush
 
 <div class="container-xxl flex-grow-1 container-p-y">
