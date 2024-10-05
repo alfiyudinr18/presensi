@@ -4,27 +4,24 @@
 @push('js')
 <<<<<<< HEAD
     <script>
-        // $(document).ready(function(){
-        //     setInterval(function(){
-        //         $("#nokartu").load('/nokartu')
-        //     },1000);
-        // });
-        $(document).ready(function () {
-            setInterval(() => {
-                $.ajax({
-                    type: "GET",
-                    url: "/nokartu",
-                    success: function (response) {
-                        $("#nokartu").html(response.data.uid);
-                        console.log(response);
-                    }
-                });
-            }, 1000);
+        $(document).ready(function(){
+            setInterval(function(){
+                $("#nokartu").load('/nokartu')
+            },1000);
         });
+        // $(document).ready(function () {
+        //     setInterval(() => {
+        //         $.ajax({
+        //             type: "GET",
+        //             url: "/nokartu",
+        //             success: function (response) {
+        //                 $("#nokartu").html(response.data.uid);
+        //                 console.log(response);
+        //             }
+        //         });
+        //     }, 1000);
+        // });
     </script>
-=======
-    
->>>>>>> 5d36939497f68732d9a1fcf7bd22c6fba99bce9e
 @endpush
 
 <div class="container-xxl flex-grow-1 container-p-y">
