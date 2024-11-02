@@ -38,7 +38,7 @@
 $(document).ready(function(){
     setInterval(function(){
         $("#isi").load('/reader')
-    },3000);
+    },1000);
 });
 </script>
     </body>
