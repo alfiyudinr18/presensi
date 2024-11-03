@@ -17,7 +17,7 @@
                 <div class="col-sm-5 text-center text-sm-left">
                 <div class="card-body pb-0 px-0 px-md-6">
                     <img
-                    src="{{ asset('img/illustrations/man-with-laptop.png')}}"
+                    src="{{ asset('assets/img/illustrations/man-with-laptop.png')}}"
                     height="175"
                     class="scaleX-n1-rtl"
                     alt="View Badge User" />
@@ -35,7 +35,7 @@
                 <div class="card-body">
                     <div class="card-title d-flex align-items-start justify-content-between mb-4">
                     <div class="avatar flex-shrink-0">
-                        <img src="{{ asset('img/icons/unicons/wallet.png')}}" alt="paypal" class="rounded" />
+                        <img src="{{ asset('assets/img/icons/unicons/wallet.png')}}" alt="paypal" class="rounded" />
                     </div>
                     <div class="dropdown">
                         <button
@@ -62,7 +62,7 @@
                 <div class="card-body">
                     <div class="card-title d-flex align-items-start justify-content-between mb-4">
                     <div class="avatar flex-shrink-0">
-                        <img src="{{ asset('img/icons/unicons/chart.png')}}" alt="Credit Card" class="rounded" />
+                        <img src="{{ asset('assets/img/icons/unicons/chart.png')}}" alt="Credit Card" class="rounded" />
                     </div>
                     <div class="dropdown">
                         <button
