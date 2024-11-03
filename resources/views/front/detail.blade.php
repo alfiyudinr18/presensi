@@ -94,8 +94,8 @@
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi bi-code"></i></div>
-                        <h2 class="fs-4 fw-bold">Belum waktu keluar!!</h2>
-                        <p class="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
+                        <h2 class="fs-4 fw-bold">Anda Sudah Melakukan Presensi!</h2>
+                        <p class="mb-0">Presensi Jam Keluar / Presensi di Besok Hari!</p>
                     </div>
                 </div>
             </div>

@@ -2,25 +2,12 @@
 
 @section('content')
 @push('js')
-<<<<<<< HEAD
     <script>
         $(document).ready(function(){
             setInterval(function(){
                 $("#nokartu").load('/nokartu')
-            },1000);
+            },0);
         });
-        // $(document).ready(function () {
-        //     setInterval(() => {
-        //         $.ajax({
-        //             type: "GET",
-        //             url: "/nokartu",
-        //             success: function (response) {
-        //                 $("#nokartu").html(response.data.uid);
-        //                 console.log(response);
-        //             }
-        //         });
-        //     }, 1000);
-        // });
     </script>
 @endpush
 

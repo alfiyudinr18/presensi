@@ -33,7 +33,7 @@ class AnggotaController extends Controller
 
     public function create()
     {
-        $delete = DB::table('rfid_tags')->delete();
+        // $delete = DB::table('rfid_tags')->delete();
         $divisi = Divisi::all();
         return view('anggota.create', compact('divisi'));
     }
