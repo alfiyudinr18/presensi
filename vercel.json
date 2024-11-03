@@ -5,6 +5,9 @@
             "runtime": "vercel-php@0.6.0"
         }
     },
+    "builds": [
+        { "src": "api/index.php", "use": "@vercel/php" }
+    ],
     "routes": [
         {
             "src": "/assets/(.*)",
@@ -22,7 +25,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_KEY" : "base64:CA3Yc7vIdLnV/adVl9KzSUpuNr6XuPqySg6NqEwtghk=",
+        "APP_KEY" : "base64:4p/aswATqNjJneRykwFbTRlwJCTXe06InzpjLq5AfdY=",
         "APP_URL": "https://presensi-amber.vercel.app",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
